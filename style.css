@@ -1,0 +1,141 @@
+/* The following styles are part of the page formatting found on every page. */
+body {
+    margin:0;
+    background-color:#A9A9A9;
+}
+nav {
+    width:100%;
+    height:5vh;
+    background-color:#002642;
+    display:flex;
+    justify-content:space-evenly;
+    box-shadow:0px 10px 10px black;
+    margin:0px;
+}
+nav>a {
+    text-decoration:none;
+    font-size:30px;
+    font-family:cursive;
+    color:white;
+}
+nav>a:hover {
+    font-size:32px;
+}
+#selected {
+    text-decoration:underline;
+}
+#contentBackground {
+    display:flex;
+    justify-content:center;
+}
+article {
+    background-color:white;
+    width:50vw;
+    height:90vh;
+    box-shadow:8px 0px 10px, -8px 0px 10px, inset 0px 0px 8px;
+}
+article>section>h1 {
+    font-size: 50px;
+    margin:0px;
+    text-align: center;
+}
+article>section>p{
+    text-align:center;
+    font-size:30px;
+    margin:0px;
+}
+footer {
+    width:100%;
+    height:5vh;
+    background-color:#002642;
+    box-shadow:0px -8px 10px black;
+    display:flex;
+    justify-content:end;
+}
+footer>h3 {
+    margin:0px 1vw 0px 0px;
+    color:white;
+    font-family:cursive;
+}
+
+/* The following is exclusive to the home page */
+#quote {
+    font-family:Tahoma;
+    font-size:40px;
+    text-shadow:2px 2px black;
+    animation-name: fadein;
+    animation-duration: 2s;
+    text-align:center;
+    margin:0px;
+}
+@keyframes fadein {
+    0%{opacity: 0;}
+    25%{opacity:0.25;}
+    50%{opacity:0.5;}
+    75%{opacity:0.75;}
+    100%{opacity:1;}
+}
+article>.home>hr {
+    margin-bottom:6vh;
+}
+article>div.home {
+    margin-top:3vh;
+    display:flex;
+    justify-content: center;
+}
+
+/* The following is exclusive to the About page. */
+article>.cards {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+article>.cards>div {
+    border: solid 1px black;
+    width:24vw;
+    height:30vh;
+    margin-top:4vh;
+    margin-bottom:4vh;
+}
+article>.cards>div>h1 {
+    margin: 1vh 0vh 0vh 1vh;
+    font-size: 40px;
+    text-align: center;
+}
+article>.cards>div>p {
+    font-size:25px;
+    margin: 2vh 2vh 2vh 2vh;
+}
+
+/* The following is exclusive to the Portfolio page. */
+article>section.projectCard {
+    display:flex;
+}
+article>section.projectCard>div>h1 {
+    margin:1vh 0vh 0vh 0vh;
+    font-size: 50px;
+    text-align: center;
+}
+article>section.projectCard>div>p {
+    margin-left:2vh;
+    margin-right:2vh;
+    text-align: left;
+    font-size: 25px;
+}
+
+/* The following is exclusive to the Contact page */
+article>section>#contactForm>div>div>input {
+    width:20vw;
+    margin-bottom:1vh;
+}
+article>section>#contactForm {
+    display:flex;
+    justify-content: center;
+}
+
+/* The following is exclusive to the submitted page */
+article>section>#submitBack {
+    font-size:50px;
+    margin-left:22vw;
+}
